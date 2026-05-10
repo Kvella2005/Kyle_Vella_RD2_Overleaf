@@ -1,21 +1,93 @@
 \section{Findings \& Discussion of Results}
 \label{sec:Fin}
-\par This section is a delicate section and you are encouraged to be as honest and open as possible. The aim is not to show that you got a perfect solution to a long existing problem. Trying to state that in a few months you developed a perfect solution with 100\% is not convincing and raises doubts. It is recommended that you document your findings in every step of your research pipeline, highlighting your observations and decisions taken. Present your results and very importantly compare with existing research which you documented in Section~\ref{sec:Lit}. 
 
-\par The focus of the Project module is for you to delve into an area that exposes you to new technologies and offers you an opportunity to be critical of your work. So you are expected to document where your solution/research worked and where it did not. Reflect and document reasons why the solution/research did not perform as expected and propose ways of addressing this. From these observations you will produce new research questions in the next section. Consider the research in \enquote{Brand usage detection within audio streams}, where certain key terms were searched within videos, the results of which are documented in Table~\ref{tab:Accents}. You will notice that the terms \enquote{Peppa} and \enquote{Sushi} were the least recognised terms even by the best transcribers. Upon investigation we determined that \enquote{Peppa} was not recognised cause of voice morphing to create childish voices in the cartoon video, whilst \enquote{Sushi} was pronounced by a Japanese person speaking English. So the research student decided to focus his dissertation research on how to create a system that is able to recognise heavy accents to automate the configuration of a transcriber, in this case to cater for English spoken by a Japanese person, which accent is very different from an Indian accent, British accent or Italian accent, just to name a few.
+\subsection{AI Score vs. Recruiter Score Correlation}
+\par After responses from 4 participants, both AI and human reviewer scores calculate a pearson correlation of 0.5286 resulting in a moderate positive relationship as show in figure \ref{fig:correlation_plot}. The prototype was proven to be used as a supportive rather than replacing human reviewers. 
 
-\begin{table}[ht]
+\begin{figure}[htbp]
     \centering
-    \caption{Recall results}
-    \label{tab:Accents}
-    \begin{tabular}{l|l|l|l|l}
-    \textbf{\#} & \textbf{Term}   & \textbf{Google} \textbf{Cloud} &\textbf{} \textbf{Google} \textbf{Speech} & \textbf{Sphinx} \textbf{CMU} \\ \hline
-    1        & Peppa  & 27\%             & 33\%              & 0\%        \\
-    2        & Peppa  & 33\%             & 22\%              & 0\%        \\
-    3        & Apple  & 96\%             & 92\%              & 79\%       \\
-    4        & Galaxy & 100\%            & 100\%             & 100\%      \\
-    5        & Galaxy & 95\%             & 95\%              & 80\%       \\
-    6        & Sushi  & 75\%             & 35\%              & 0\%        \\ \hline
-    ~       & Average & 71\%    & 62\%  &   43\%    \\
+    \footnotesize \small
+    \begin{tikzpicture}
+    \begin{axis}[
+        width= \columnwidth,
+        height= 6cm,
+        title={AI Score vs. Recruiter Score Correlation},
+        xlabel={Recruiter Evaluation},
+        ylabel={BART-MNLI AI Score},
+        xmin=0, xmax=1.1,
+        ymin=0, ymax=1.1,
+        grid=major,
+        scatter/classes={
+            a={mark=o,draw=black}}
+    ]
+    \addplot[
+        scatter,
+        only marks,
+        mark size=2pt,
+        scatter src=explicit symbolic
+    ] table [meta=label] {
+        x y label
+        0.90 0.30 a
+        1.00 0.72 a
+        1.00 0.72 a
+        0.95 0.84 a
+        0.90 0.37 a
+        0.40 0.35 a
+        0.60 0.46 a
+        0.10 0.37 a
+        0.30 0.60 a
+        0.10 0.35 a
+    };
+    % Regression Line (Approximate for r=0.52)
+    \addplot [red, thick, domain=0:1] {0.5*x + 0.2};
+    \end{axis}
+    \end{tikzpicture}
+    \caption{Scatter plot illustrating the moderate positive correlation ($r = 0.5286$) between automated and manual scoring.}
+    \label{fig:correlation_plot}
+\end{figure}
+
+\par However, ZSC struggled to identify key terms found in user's open ended responses. For instance, the term 'SLA' was scored higher by the human recruiter than AI. BART-MNLI was trained on general sources such as wikipedia which possesses misunderstanding the industry context.  
+
+\par The results align with Sikström et. al \cite{s2025sikstrom} since the source stated that Natural Language Processing is sensitive to specific word choice such as technological terms. This confirmed Sikström's theory where artifiical intelligence scoring significantly change if some words are subtle. 
+
+\par In the session, model's confidence score dropped if the user's open response is shorter than 20 words resulting in a minimum character count. 
+
+\begin{table}[htbp]
+    \centering
+    \caption{Comparative Analysis of AI vs. Recruiter Scoring for Selected Responses}
+    \label{tab:Comparison}
+    \resizebox{\columnwidth}{!}{% % This scales the table to fit the column
+    \begin{tabular}{llp{4cm}cc} 
+        \toprule
+        \textbf{ID} & \textbf{Trait} & \textbf{Candidate Response} & \textbf{AI} & \textbf{Human} \\ 
+        \midrule
+        0 & Cons. & I managed three simultaneous projects by using a Gantt chart... & 0.72 & 1.00 \\
+        \midrule
+        1 & Open. & I noticed our traditional filing system was inefficient... & 0.30 & 0.90 \\
+        \midrule
+        2 & Extra. & I hate talking to people I don't know. I'd much rather sit in the back... & 0.30 & 0.90 \\
+        \midrule
+        3 & Agree. & I don't care about making friends at work. If I think an idea is stupid, I'll say it... & 0.30 & 0.90 \\
+        \midrule
+        4 & Neuro. & When confronted with technical debt, I focus on root-cause analysis without escalating... & 0.30 & 0.90 \\
+        \bottomrule
+    \end{tabular}%
+    }
+\end{table}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Operational Efficiency Comparison: AI vs. Manual Evaluation}
+    \footnotesize \small
+    \resizebox{\columnwidth}{!}{
+    \label{tab:Efficiency}
+    \begin{tabular}{|l|c|c|}
+        \hline
+        \textbf{Metric} & \textbf{BART-MNLI Prototype} & \textbf{Human Recruiter} \\ \hline
+        Total Evaluations & 20 & 20 \\ \hline
+        Avg. Time per Response & 0.35 seconds & $\sim$60.0 seconds \\ \hline
+        Total Process Time & 7.04 seconds & $\sim$20 minutes \\ \hline
+        \textbf{Time Reduction} & \textbf{99.4\%} & - \\ \hline
     \end{tabular}
+    }
 \end{table}
