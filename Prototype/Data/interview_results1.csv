@@ -1,0 +1,6 @@
+Trait,Response,AI_Score,Time_Taken_Sec
+Openness,"I usually just follow the instructions given to me, but sometimes I try to think of a quicker way to finish the task if I have extra time.",0.3569,1.37
+Conscientiousness,I use a to-do list on my phone. It helps me remember what I need to do each day so I don't forget the big things.,0.4658,0.18
+Extraversion,I hate talking to people I don't know. I'd much rather just sit in the back with my headphones on and do my own thing all day.,0.3773,0.17
+Agreeableness,"I try to be nice to everyone. If someone is being difficult, I just ignore them and focus on my own work to avoid the drama.",0.601,0.19
+Neuroticism,I get super stressed out even over small things. Last week I basically had a meltdown because my internet went down for ten minutes.,0.3594,0.19

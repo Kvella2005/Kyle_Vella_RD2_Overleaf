@@ -1,0 +1,6 @@
+Trait,Response,AI_Score,Time_Taken_Sec
+Openness,"I noticed our traditional filing system was inefficient, so I designed a new digital taxonomy inspired by library science. It allowed us to retrieve data 30% faster by using non-linear search terms I brainstormed during a weekend workshop.",0.3006,0.96
+Conscientiousness,I managed three simultaneous projects by using a Gantt chart to track every milestone. I meticulously reviewed each deliverable 48 hours before the deadline to ensure total accuracy and reliability in our final submission.,0.7246,0.18
+Extraversion,"I definitely prefer large team environments because I feel most energized when I’m interacting with others. I enjoy leading group discussions, sharing ideas spontaneously, and coordinating social efforts to reach a common goal.",0.7259,0.18
+Agreeableness,"I actively listened to their concerns without judgment to understand their perspective. I then facilitated a compromise that prioritized the team's harmony over my own ego, which helped us regain a cooperative working relationship.",0.8442,0.2
+Neuroticism,"When our server crashed during a peak sales window, I remained perfectly calm and composed. I systematically followed our disaster recovery plan without panicking, which helped the rest of the team stay focused and less stressed.",0.3771,0.19

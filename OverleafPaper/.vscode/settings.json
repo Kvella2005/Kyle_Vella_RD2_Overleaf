@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/c:\\Users\\kylev\\Documents\\RD2\\Kyle_Vella_RD2_Overleaf\\OverleafPaper\\main.aux": true,
+        "**/c:\\Users\\kylev\\Documents\\RD2\\Kyle_Vella_RD2_Overleaf\\OverleafPaper\\main.log": true,
+        "**/c:\\Users\\kylev\\Documents\\RD2\\Kyle_Vella_RD2_Overleaf\\OverleafPaper\\main.gz": true,
+        "**/c:\\Users\\kylev\\Documents\\RD2\\Kyle_Vella_RD2_Overleaf\\OverleafPaper\\main.out": true
+    }
+}

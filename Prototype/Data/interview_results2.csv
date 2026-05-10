@@ -1,0 +1,6 @@
+Trait,Response,AI_Score,Time_Taken_Sec
+Openness,I am constantly seeking out new perspectives and learning emerging technologies to ensure my problem-solving methods remain innovative and adaptive to change.,0.6444,0.32
+Conscientiousness,"I maintain a high level of discipline by breaking down every major project into small, actionable sub-tasks with internal deadlines, ensuring 100% reliability for the client.",0.8589,0.19
+Extraversion,"I like people and I'm okay with talking to them, but I also really enjoy just sitting quietly and getting my own tasks done without being interrupted by the group.",0.5238,0.18
+Agreeableness,"I don't care about making friends at work. If I think someone has a stupid idea, I'll tell them exactly why it's stupid right there in the meeting.",0.1796,0.2
+Neuroticism,"I get overwhelmed very easily. If something small goes wrong, I usually have to take a walk or I'll just get too frustrated to keep working.",0.4295,0.18

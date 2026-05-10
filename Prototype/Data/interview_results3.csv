@@ -1,0 +1,6 @@
+Trait,Response,AI_Score,Time_Taken_Sec
+Openness,I frequently perform A/B testing on our marketing collateral to pivot our strategy based on data-driven insights rather than traditional heuristics.,0.6462,0.32
+Conscientiousness,"I utilize a CRM-based pipeline to systematically follow up on every lead, ensuring full compliance with our internal SLA standards.",0.4137,0.18
+Extraversion,"I enjoy working in teams for short periods to brainstorm, but I find that I do my most effective work when I have a few hours of quiet time to focus.",0.2672,0.18
+Agreeableness,"I generally agree with my colleagues to keep things moving, but if I think a decision is truly bad for the project, I will respectfully voice my concern.",0.4851,0.19
+Neuroticism,"When confronted with high-stakes technical debt during a release, I focus on root-cause analysis to mitigate risks without escalating the situation.",0.2649,0.18

@@ -1,0 +1,21 @@
+Trait,Response,AI_Score,Time_Taken_Sec,Recruiter_Score
+Openness,"I noticed our traditional filing system was inefficient, so I designed a new digital taxonomy inspired by library science. It allowed us to retrieve data 30% faster by using non-linear search terms I brainstormed during a weekend workshop.",0.3006,0.96,0.9
+Conscientiousness,I managed three simultaneous projects by using a Gantt chart to track every milestone. I meticulously reviewed each deliverable 48 hours before the deadline to ensure total accuracy and reliability in our final submission.,0.7246,0.18,1.0
+Extraversion,"I definitely prefer large team environments because I feel most energized when I’m interacting with others. I enjoy leading group discussions, sharing ideas spontaneously, and coordinating social efforts to reach a common goal.",0.7259,0.18,1.0
+Agreeableness,"I actively listened to their concerns without judgment to understand their perspective. I then facilitated a compromise that prioritized the team's harmony over my own ego, which helped us regain a cooperative working relationship.",0.8442,0.2,0.95
+Neuroticism,"When our server crashed during a peak sales window, I remained perfectly calm and composed. I systematically followed our disaster recovery plan without panicking, which helped the rest of the team stay focused and less stressed.",0.3771,0.19,0.9
+Openness,"I usually just follow the instructions given to me, but sometimes I try to think of a quicker way to finish the task if I have extra time.",0.3569,1.37,0.4
+Conscientiousness,I use a to-do list on my phone. It helps me remember what I need to do each day so I don't forget the big things.,0.4658,0.18,0.6
+Extraversion,I hate talking to people I don't know. I'd much rather just sit in the back with my headphones on and do my own thing all day.,0.3773,0.17,0.1
+Agreeableness,"I try to be nice to everyone. If someone is being difficult, I just ignore them and focus on my own work to avoid the drama.",0.601,0.19,0.3
+Neuroticism,I get super stressed out even over small things. Last week I basically had a meltdown because my internet went down for ten minutes.,0.3594,0.19,0.1
+Openness,I am constantly seeking out new perspectives and learning emerging technologies to ensure my problem-solving methods remain innovative and adaptive to change.,0.6444,0.32,0.8
+Conscientiousness,"I maintain a high level of discipline by breaking down every major project into small, actionable sub-tasks with internal deadlines, ensuring 100% reliability for the client.",0.8589,0.19,0.9
+Extraversion,"I like people and I'm okay with talking to them, but I also really enjoy just sitting quietly and getting my own tasks done without being interrupted by the group.",0.5238,0.18,0.5
+Agreeableness,"I don't care about making friends at work. If I think someone has a stupid idea, I'll tell them exactly why it's stupid right there in the meeting.",0.1796,0.2,0.0
+Neuroticism,"I get overwhelmed very easily. If something small goes wrong, I usually have to take a walk or I'll just get too frustrated to keep working.",0.4295,0.18,0.2
+Openness,I frequently perform A/B testing on our marketing collateral to pivot our strategy based on data-driven insights rather than traditional heuristics.,0.6462,0.32,0.9
+Conscientiousness,"I utilize a CRM-based pipeline to systematically follow up on every lead, ensuring full compliance with our internal SLA standards.",0.4137,0.18,0.85
+Extraversion,"I enjoy working in teams for short periods to brainstorm, but I find that I do my most effective work when I have a few hours of quiet time to focus.",0.2672,0.18,0.4
+Agreeableness,"I generally agree with my colleagues to keep things moving, but if I think a decision is truly bad for the project, I will respectfully voice my concern.",0.4851,0.19,0.7
+Neuroticism,"When confronted with high-stakes technical debt during a release, I focus on root-cause analysis to mitigate risks without escalating the situation.",0.2649,0.18,0.95
